@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+from flask import Flask, request, jsonify
+
 obj = Flask(__name__)
 
 @obj.route("/")
@@ -19,7 +20,7 @@ def math_operator():
         result = number1/number2
     else:
         result = number1-number2      
-    return result
+    return jsonify(result)
 
 
 
