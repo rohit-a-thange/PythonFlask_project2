@@ -25,7 +25,7 @@ def math_operator():
     return "The operation is {} and the result is {}".format(operation,result)
 
 
-
+print(__name__)
 
 
 if __name__ == "__main__":
